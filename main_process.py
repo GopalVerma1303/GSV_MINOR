@@ -33,7 +33,7 @@ df = df[df['Amount'] >= 0]
 df['Gender'] = df['Gender'].str.lower()
 
 # Save the processed data to a new CSV file
-output_file_path = 'Processed_Data.csv'  # Replace with the desired output file path and extension
+output_file_path = './gen_files/Processed_Data.csv'  # Replace with the desired output file path and extension
 df.to_csv(output_file_path, index=False)
 
 print("Data preprocessing and refining completed. Processed data saved to", output_file_path)
